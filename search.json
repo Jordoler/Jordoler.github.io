@@ -1,45 +1,52 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Personal Hub!",
-    "section": "",
-    "text": "Here’s a quick guide to the main sections of this website:\n\n\n“Explore my learning resources and developed notes on topics that fascinate and confuse me. Knowledge is most powerful when shared, it’s what the World Wide Web was made for!”\n\n\n\nCheck out the projects I’ve worked on! From simple applications to beautiful animations, I love exploring physics and mathematics through programming. Gaining a deeper understanding of the concepts while producing amazing spectacles. Each project is also a showcase of what I’ve learned and accomplished.\n\n\n\nRead my latest posts where I discuss scientific intrigues, my programming journey, and personal reflections."
-  },
-  {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Welcome to My Personal Hub!",
-    "section": "",
-    "text": "Hi, I’m John Doe, a passionate software developer and technology enthusiast. I believe in the power of learning and innovation. This website is a space where I share my personal projects, educational resources, and thoughts on various topics in the tech world.\nFeel free to explore the sections below to dive deeper into my work and ideas.\n\n📍 Location: New York, USA\n📧 Email: john.doe@example.com"
-  },
-  {
-    "objectID": "index.html#resume",
-    "href": "index.html#resume",
-    "title": "Jordan Grey",
-    "section": "Resume",
-    "text": "Resume\n\nSkills\n\nLanguages: Python, C++, SQL\nFrameworks & Libraries: React, Node.js, Flask, Pandas\nTools: Docker, Git, JuypterLab\n\n\n\nExperience\n\nSoftware Engineer @ TechCorp (2020–Present)\n\nBuilt scalable microservices using Python and Flask, handling millions of requests per day.\nImproved deployment times by 50% by implementing CI/CD pipelines using Jenkins and Docker.\nMentored 5 junior developers, guiding them in project architecture and coding best practices.\n\n\n\nJunior Developer @ WebDev Solutions (2018–2020)\n\nDeveloped responsive front-end applications with React and Bootstrap.\nOptimized SQL queries, reducing database latency by 30%.\nCollaborated with cross-functional teams to deliver projects ahead of deadlines."
-  },
-  {
-    "objectID": "index.html#blog-posts",
-    "href": "index.html#blog-posts",
-    "title": "Jordan Grey",
-    "section": "Blog Posts",
-    "text": "Blog Posts\n\nLatest Articles\n\nHow to Build Scalable APIs - Learn the principles of designing robust and scalable APIs.\nUnderstanding Docker Containers - A beginner-friendly guide to Docker.\nGetting Started with React - Learn the basics of building user interfaces with React.\n\n👉 View All Posts"
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Jordan Grey",
-    "section": "Contact",
-    "text": "Contact\nI’d love to connect! Whether you have questions, collaboration ideas, or just want to say hi, feel free to reach out."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Jordan Grey",
     "section": "",
     "text": "Hi, I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey\n\nFeel free to explore my Resume or check out my latest Posts."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Jordan Grey",
+    "section": "",
+    "text": "Hi, I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey\n\nFeel free to explore my Resume or check out my latest Posts."
+  },
+  {
+    "objectID": "about.html#resume",
+    "href": "about.html#resume",
+    "title": "Jordan Grey",
+    "section": "Resume",
+    "text": "Resume\n\nSkills\n\nLanguages: Python, C++, SQL\nTools: Docker, Git, JuypterLab\nNetworking: CCNA-Equivalent training\n\n\n\nExperience\n\nIT Support Analysist @ DiamondIT (2022)\n\nBuilt scalable microservices using Python and Flask, handling millions of requests per day.\nImproved deployment times by 50% by implementing CI/CD pipelines using Jenkins and Docker.\nMentored 5 junior developers, guiding them in project architecture and coding best practices."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Personal Hub!",
+    "section": "",
+    "text": "Here’s a quick guide to the main sections of this website:\n\n\nExplore my learning resources and developed notes on topics that fascinate and confuse me. Knowledge is most powerful when shared, it’s what the World Wide Web was made for!\n\n\n\nLearn more about the guy behind the website."
+  },
+  {
+    "objectID": "index.html#explore-the-website",
+    "href": "index.html#explore-the-website",
+    "title": "Welcome to My Personal Hub!",
+    "section": "",
+    "text": "Here’s a quick guide to the main sections of this website:\n\n\nExplore my learning resources and developed notes on topics that fascinate and confuse me. Knowledge is most powerful when shared, it’s what the World Wide Web was made for!\n\n\n\nLearn more about the guy behind the website."
+  },
+  {
+    "objectID": "index.html#why-this-website",
+    "href": "index.html#why-this-website",
+    "title": "Welcome to My Personal Hub!",
+    "section": "Why This Website?",
+    "text": "Why This Website?\nThis site is designed to be a hub for all my learning, exploration and professional development. Whether you’re a fellow IT enthausist, a science nerd, or just curious about the world, I hope you’ll find useful resources and insights here."
+  },
+  {
+    "objectID": "index.html#stay-connected",
+    "href": "index.html#stay-connected",
+    "title": "Welcome to My Personal Hub!",
+    "section": "Stay Connected",
+    "text": "Stay Connected\nFollow me on social media for the latest updates and insights:\n\nGitHub: github.com/Jordoler\nLinkedIn: linkedin.com/in/jordangrey"
   },
   {
     "objectID": "MA3/1_1CauchyProblem.html",
@@ -68,117 +75,5 @@
     "title": "1.1 Cauchy Problem for 1st Order Differential Equations",
     "section": "3. Cauchy Problem",
     "text": "3. Cauchy Problem"
-  },
-  {
-    "objectID": "index_de.html",
-    "href": "index_de.html",
-    "title": "Jordan Grey",
-    "section": "",
-    "text": "Hi, I’m Jordan Grey! 👋 I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: john.doe@example.com\n🌐 GitHub: github.com/johndoe\n🔗 LinkedIn: linkedin.com/in/johndoe\n\nFeel free to explore my Resume or check out my latest Blog Posts."
-  },
-  {
-    "objectID": "index_de.html#about-me",
-    "href": "index_de.html#about-me",
-    "title": "Jordan Grey",
-    "section": "",
-    "text": "Hi, I’m Jordan Grey! 👋 I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: john.doe@example.com\n🌐 GitHub: github.com/johndoe\n🔗 LinkedIn: linkedin.com/in/johndoe\n\nFeel free to explore my Resume or check out my latest Blog Posts."
-  },
-  {
-    "objectID": "index_de.html#resume",
-    "href": "index_de.html#resume",
-    "title": "Jordan Grey",
-    "section": "Resume",
-    "text": "Resume\n\nSkills\n\nLanguages: Python, JavaScript, C++, SQL\nFrameworks & Libraries: React, Node.js, Flask, Pandas\nTools: Docker, Kubernetes, Git, AWS\n\n\n\nExperience\n\nSoftware Engineer @ TechCorp (2020–Present)\n\nBuilt scalable microservices using Python and Flask, handling millions of requests per day.\nImproved deployment times by 50% by implementing CI/CD pipelines using Jenkins and Docker.\nMentored 5 junior developers, guiding them in project architecture and coding best practices.\n\n\n\nJunior Developer @ WebDev Solutions (2018–2020)\n\nDeveloped responsive front-end applications with React and Bootstrap.\nOptimized SQL queries, reducing database latency by 30%.\nCollaborated with cross-functional teams to deliver projects ahead of deadlines."
-  },
-  {
-    "objectID": "index_de.html#teast",
-    "href": "index_de.html#teast",
-    "title": "Jordan Grey",
-    "section": "Teast",
-    "text": "Teast\n\nTsasdg\n\nHow to Build Scalable APIs - Learn the principles of designing robust and scalable APIs.\nUnderstanding Docker Containers - A beginner-friendly guide to Docker.\nGetting Started with React - Learn the basics of building user interfaces with React.\n\n👉 View All Posts"
-  },
-  {
-    "objectID": "index_de.html#contaadsfadfsadsct",
-    "href": "index_de.html#contaadsfadfsadsct",
-    "title": "Jordan Grey",
-    "section": "Contaadsfadfsadsct",
-    "text": "Contaadsfadfsadsct\nI’d love to connect! Whether you have questions, collaboration ideas, or just want to say hi, feel free to reach out."
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "Jordan Grey",
-    "section": "",
-    "text": "Hi, I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey\n\nFeel free to explore my Resume or check out my latest Posts."
-  },
-  {
-    "objectID": "about.html#resume",
-    "href": "about.html#resume",
-    "title": "Jordan Grey",
-    "section": "Resume",
-    "text": "Resume\n\nSkills\n\nLanguages: Python, C++, SQL\nFrameworks & Libraries: React, Node.js, Flask, Pandas\nTools: Docker, Git, JuypterLab\n\n\n\nExperience\n\nSoftware Engineer @ TechCorp (2020–Present)\n\nBuilt scalable microservices using Python and Flask, handling millions of requests per day.\nImproved deployment times by 50% by implementing CI/CD pipelines using Jenkins and Docker.\nMentored 5 junior developers, guiding them in project architecture and coding best practices.\n\n\n\nJunior Developer @ WebDev Solutions (2018–2020)\n\nDeveloped responsive front-end applications with React and Bootstrap.\nOptimized SQL queries, reducing database latency by 30%.\nCollaborated with cross-functional teams to deliver projects ahead of deadlines."
-  },
-  {
-    "objectID": "about.html#blog-posts",
-    "href": "about.html#blog-posts",
-    "title": "Jordan Grey",
-    "section": "Blog Posts",
-    "text": "Blog Posts\n\nLatest Articles\n\nHow to Build Scalable APIs - Learn the principles of designing robust and scalable APIs.\nUnderstanding Docker Containers - A beginner-friendly guide to Docker.\nGetting Started with React - Learn the basics of building user interfaces with React.\n\n👉 View All Posts"
-  },
-  {
-    "objectID": "about.html#about-me-1",
-    "href": "about.html#about-me-1",
-    "title": "Jordan Grey",
-    "section": "About Me",
-    "text": "About Me\nHi, I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey\n\nFeel free to explore my Resume or check out my latest Posts."
-  },
-  {
-    "objectID": "about.html#resume-1",
-    "href": "about.html#resume-1",
-    "title": "Jordan Grey",
-    "section": "Resume",
-    "text": "Resume\n\nSkills\n\nLanguages: Python, C++, SQL\nFrameworks & Libraries: React, Node.js, Flask, Pandas\nTools: Docker, Git, JuypterLab\n\n\n\nExperience\n\nSoftware Engineer @ TechCorp (2020–Present)\n\nBuilt scalable microservices using Python and Flask, handling millions of requests per day.\nImproved deployment times by 50% by implementing CI/CD pipelines using Jenkins and Docker.\nMentored 5 junior developers, guiding them in project architecture and coding best practices.\n\n\n\nJunior Developer @ WebDev Solutions (2018–2020)\n\nDeveloped responsive front-end applications with React and Bootstrap.\nOptimized SQL queries, reducing database latency by 30%.\nCollaborated with cross-functional teams to deliver projects ahead of deadlines."
-  },
-  {
-    "objectID": "about.html#blog-posts-1",
-    "href": "about.html#blog-posts-1",
-    "title": "Jordan Grey",
-    "section": "Blog Posts",
-    "text": "Blog Posts\n\nLatest Articles\n\nHow to Build Scalable APIs - Learn the principles of designing robust and scalable APIs.\nUnderstanding Docker Containers - A beginner-friendly guide to Docker.\nGetting Started with React - Learn the basics of building user interfaces with React.\n\n👉 View All Posts"
-  },
-  {
-    "objectID": "index.html#explore-the-website",
-    "href": "index.html#explore-the-website",
-    "title": "Welcome to My Personal Hub!",
-    "section": "",
-    "text": "Here’s a quick guide to the main sections of this website:\n\n\n“Explore my learning resources and developed notes on topics that fascinate and confuse me. Knowledge is most powerful when shared, it’s what the World Wide Web was made for!”\n\n\n\nCheck out the projects I’ve worked on! From simple applications to beautiful animations, I love exploring physics and mathematics through programming. Gaining a deeper understanding of the concepts while producing amazing spectacles. Each project is also a showcase of what I’ve learned and accomplished.\n\n\n\nRead my latest posts where I discuss scientific intrigues, my programming journey, and personal reflections."
-  },
-  {
-    "objectID": "index.html#latest-blog-posts",
-    "href": "index.html#latest-blog-posts",
-    "title": "Welcome to My Personal Hub!",
-    "section": "Latest Blog Posts",
-    "text": "Latest Blog Posts\nCheck out some of my recent articles:\n\nHow to Build a Scalable API with Python\n\nThe Future of JavaScript Frameworks\nIntroduction to Cloud Computing\n\n👉 Visit the Blog for More"
-  },
-  {
-    "objectID": "index.html#why-this-website",
-    "href": "index.html#why-this-website",
-    "title": "Welcome to My Personal Hub!",
-    "section": "Why This Website?",
-    "text": "Why This Website?\nThis site is designed to be a hub for all my learning, exploration and professional development. Whether you’re a fellow IT enthausist, a science nerd, or just curious about the world, I hope you’ll find useful resources and insights here."
-  },
-  {
-    "objectID": "index.html#stay-connected",
-    "href": "index.html#stay-connected",
-    "title": "Welcome to My Personal Hub!",
-    "section": "Stay Connected",
-    "text": "Stay Connected\nFollow me on social media for the latest updates and insights:\n\nGitHub: github.com/Jordoler\nLinkedIn: linkedin.com/in/jordangrey"
-  },
-  {
-    "objectID": "index.html#latest-posts",
-    "href": "index.html#latest-posts",
-    "title": "Welcome to My Personal Hub!",
-    "section": "Latest Posts",
-    "text": "Latest Posts\nCheck out some of my recent articles:\n\nHow to Build a Scalable API with Python\n\nThe Future of JavaScript Frameworks\nIntroduction to Cloud Computing\n\n👉 Visit the Blog for More"
   }
 ]
