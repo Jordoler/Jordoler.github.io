@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Jordan Grey",
+    "section": "",
+    "text": "Hi, I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey\n\nFeel free to explore my Resume or check out my latest Posts."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Jordan Grey",
+    "section": "",
+    "text": "Hi, I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey\n\nFeel free to explore my Resume or check out my latest Posts."
+  },
+  {
+    "objectID": "about.html#resume",
+    "href": "about.html#resume",
+    "title": "Jordan Grey",
+    "section": "Resume",
+    "text": "Resume\n\nSkills\n\nLanguages: Python, C++, SQL\nTools: Docker, Git, JuypterLab\nNetworking: CCNA-Equivalent training\n\n\n\nExperience\n\nIT Support Analysist @ DiamondIT (2022)\n\nBuilt scalable microservices using Python and Flask, handling millions of requests per day.\nImproved deployment times by 50% by implementing CI/CD pipelines using Jenkins and Docker.\nMentored 5 junior developers, guiding them in project architecture and coding best practices."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Personal Hub!",
+    "section": "",
+    "text": "Here’s a quick guide to the main sections of this website:\n\n\nExplore my learning resources and developed notes on topics that fascinate and confuse me. Knowledge is most powerful when shared, it’s what the World Wide Web was made for!\n\n\n\nLearn more about the guy behind the website."
+  },
+  {
+    "objectID": "index.html#explore-the-website",
+    "href": "index.html#explore-the-website",
+    "title": "Welcome to My Personal Hub!",
+    "section": "",
+    "text": "Here’s a quick guide to the main sections of this website:\n\n\nExplore my learning resources and developed notes on topics that fascinate and confuse me. Knowledge is most powerful when shared, it’s what the World Wide Web was made for!\n\n\n\nLearn more about the guy behind the website."
+  },
+  {
+    "objectID": "index.html#why-this-website",
+    "href": "index.html#why-this-website",
+    "title": "Welcome to My Personal Hub!",
+    "section": "Why This Website?",
+    "text": "Why This Website?\nThis site is designed to be a hub for all my learning, exploration and professional development. Whether you’re a fellow IT enthausist, a science nerd, or just curious about the world, I hope you’ll find useful resources and insights here."
+  },
+  {
+    "objectID": "index.html#stay-connected",
+    "href": "index.html#stay-connected",
+    "title": "Welcome to My Personal Hub!",
+    "section": "Stay Connected",
+    "text": "Stay Connected\nFollow me on social media for the latest updates and insights:\n\nGitHub: github.com/Jordoler\nLinkedIn: linkedin.com/in/jordangrey"
+  },
+  {
+    "objectID": "MA3/1_1CauchyProblem.html",
+    "href": "MA3/1_1CauchyProblem.html",
+    "title": "1.1 Cauchy Problem for 1st Order Differential Equations",
+    "section": "",
+    "text": "Assume \\(G\\) is an open set in \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)) and \\(f:G \\rightarrow \\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)) is a given vector field.\n\n\nWhat does this mean?\n\nTo break it down, \\(G\\) being an open set in \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)) means that there is a space, \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)), that has two components:\n\n\\(\\mathbb{R}\\): A real-valued number that comes from the first \\(\\mathbb{R}\\) in \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)). This is a 1-Dimensional quantity. For example, consider it as the time \\(t\\) dimension.\n\\(\\mathbb{R}^n\\) or \\(\\mathbb{C}^n\\): A real-valued or complex-valued N-Dimensional vector quantity. For example, a position vector \\(x\\).\n\nAn example of this would be \\((t, x)\\), where \\(t\\) is from \\(\\mathbb{R}\\) and \\(x\\) is from \\(\\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)).\nAs \\(G\\) is an open set of \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)), it contains points in this space but not necessarily the points along the “boundary” of the space.\nThe vector field \\(f\\) by definition is: a vector field is an assignment of a vector to each point in a space. Thus, \\(f: G \\rightarrow \\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)) says that \\(f\\) assigns a vector in \\(\\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)) to every point in \\(G\\).\nIf we think of this logical statement in relation to Newton’s equations of motion:\n\\[\nf(t, \\vec{r}) = \\vec{r} = \\frac{d\\vec{r}}{dt}t - \\frac{1}{2} \\frac{d^2\\vec{r}}{dt^2}t^2\n\\]\nWe see that the function \\(f\\) here assigns a vector, position, to each point \\((t, \\vec{r})\\) in \\(G\\).\n\nWe are looking for a differentiable vector-function \\[x : \\langle a,b \\rangle \\subset \\mathbb{R} \\rightarrow \\mathbb{R}^n \\text{ (or } \\mathbb{C}^n ), \\ \\ \\  x(t) =\n     \\begin{pmatrix} x_1(t) \\\\ x_2(t) \\\\ \\dots \\\\ x_n(t) \\end{pmatrix} \\; \\] which satisfies the system of \\(n\\) ordinary differential equations: \\[x'(t) = f(t,x(t)) \\iff \\begin{cases} \\begin{matrix} x_1'(t) = f_1(t,x_1(t),x_2(t), \\dots , x_n(t)) \\\\ x_2'(t) = f_1(t,x_1(t),x_2(t), \\dots , x_n(t)) \\\\ \\dots \\\\ x_n'(t) = f_1(t,x_1(t),x_2(t), \\dots , x_n(t)) \\end{matrix} \\end{cases} \\ \\ \\ \\ \\ \\ \\ \\ (*)\\]\nIn the sake of brevity we focus on the real case below. In our course we will always assume that \\[ f \\in C(G;\\mathbb{R}^n)\\]\n\n\nWhat does this mean?\n\nWe are looking for a differentiable vector-function that satisfies certain conditions applied on \\(x\\).\n\\(x:\\langle a,b \\rangle \\subset \\mathbb{R} \\rightarrow \\mathbb{R}^n\\), where: - \\(\\langle a,b \\rangle\\) denotes any of the intervals \\((a,b)\\), \\([a,b]\\), \\([a,b)\\), \\((a,b]\\), \\([a,+\\infty)\\), \\((-\\infty,+\\infty)\\), etc. - \\(t\\) in \\(x(t)\\) is an element of \\(\\langle a,b \\rangle\\), a subset of \\(\\mathbb{R}\\), and its output is a vector in \\(\\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)) with \\(n\\) components.\nThis vector-function satisfies the system of \\(n\\) ordinary differential equations:\n\\[\nx'(t) = f(t, x(t)) \\iff\n\\begin{cases}\nx_1'(t) = f_1(t, x_1(t), x_2(t), \\dots, x_n(t)) \\\\\nx_2'(t) = f_2(t, x_1(t), x_2(t), \\dots, x_n(t)) \\\\\n\\vdots \\\\\nx_n'(t) = f_n(t, x_1(t), x_2(t), \\dots, x_n(t))\n\\end{cases} \\ \\ \\ \\ \\ \\ \\ (*)\n\\]\nThis defines another condition applied to \\(x\\): the derivative of \\(x\\) is a function \\(f\\) that maps the inputs \\(t\\) and \\(x(t)\\) to another vector:\n\\[\nf(t, x(t)) =\n\\begin{pmatrix}\nf_1(t, x_1(t), x_2(t), \\dots, x_n(t)) \\\\\nf_2(t, x_1(t), x_2(t), \\dots, x_n(t)) \\\\\n\\vdots \\\\\nf_n(t, x_1(t), x_2(t), \\dots, x_n(t))\n\\end{pmatrix} = x'(t)\n\\]\nNote here that \\(f(t, x(t)) = x'(t)\\) makes \\(x(t)\\) a differentiable function. Furthermore, the condition that this differential function must be an Ordinary Differential Equation is placed on \\(f(t, x(t)) = x'(t)\\).\nFinally, \\(f \\in C(G; \\mathbb{R}^n)\\) states that the function \\(f\\) is continuous and nice."
+  },
+  {
+    "objectID": "MA3/1_1CauchyProblem.html#systems-of-first-order-odes",
+    "href": "MA3/1_1CauchyProblem.html#systems-of-first-order-odes",
+    "title": "1.1 Cauchy Problem for 1st Order Differential Equations",
+    "section": "",
+    "text": "Assume \\(G\\) is an open set in \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)) and \\(f:G \\rightarrow \\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)) is a given vector field.\n\n\nWhat does this mean?\n\nTo break it down, \\(G\\) being an open set in \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)) means that there is a space, \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)), that has two components:\n\n\\(\\mathbb{R}\\): A real-valued number that comes from the first \\(\\mathbb{R}\\) in \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)). This is a 1-Dimensional quantity. For example, consider it as the time \\(t\\) dimension.\n\\(\\mathbb{R}^n\\) or \\(\\mathbb{C}^n\\): A real-valued or complex-valued N-Dimensional vector quantity. For example, a position vector \\(x\\).\n\nAn example of this would be \\((t, x)\\), where \\(t\\) is from \\(\\mathbb{R}\\) and \\(x\\) is from \\(\\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)).\nAs \\(G\\) is an open set of \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)), it contains points in this space but not necessarily the points along the “boundary” of the space.\nThe vector field \\(f\\) by definition is: a vector field is an assignment of a vector to each point in a space. Thus, \\(f: G \\rightarrow \\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)) says that \\(f\\) assigns a vector in \\(\\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)) to every point in \\(G\\).\nIf we think of this logical statement in relation to Newton’s equations of motion:\n\\[\nf(t, \\vec{r}) = \\vec{r} = \\frac{d\\vec{r}}{dt}t - \\frac{1}{2} \\frac{d^2\\vec{r}}{dt^2}t^2\n\\]\nWe see that the function \\(f\\) here assigns a vector, position, to each point \\((t, \\vec{r})\\) in \\(G\\).\n\nWe are looking for a differentiable vector-function \\[x : \\langle a,b \\rangle \\subset \\mathbb{R} \\rightarrow \\mathbb{R}^n \\text{ (or } \\mathbb{C}^n ), \\ \\ \\  x(t) =\n     \\begin{pmatrix} x_1(t) \\\\ x_2(t) \\\\ \\dots \\\\ x_n(t) \\end{pmatrix} \\; \\] which satisfies the system of \\(n\\) ordinary differential equations: \\[x'(t) = f(t,x(t)) \\iff \\begin{cases} \\begin{matrix} x_1'(t) = f_1(t,x_1(t),x_2(t), \\dots , x_n(t)) \\\\ x_2'(t) = f_1(t,x_1(t),x_2(t), \\dots , x_n(t)) \\\\ \\dots \\\\ x_n'(t) = f_1(t,x_1(t),x_2(t), \\dots , x_n(t)) \\end{matrix} \\end{cases} \\ \\ \\ \\ \\ \\ \\ \\ (*)\\]\nIn the sake of brevity we focus on the real case below. In our course we will always assume that \\[ f \\in C(G;\\mathbb{R}^n)\\]\n\n\nWhat does this mean?\n\nWe are looking for a differentiable vector-function that satisfies certain conditions applied on \\(x\\).\n\\(x:\\langle a,b \\rangle \\subset \\mathbb{R} \\rightarrow \\mathbb{R}^n\\), where: - \\(\\langle a,b \\rangle\\) denotes any of the intervals \\((a,b)\\), \\([a,b]\\), \\([a,b)\\), \\((a,b]\\), \\([a,+\\infty)\\), \\((-\\infty,+\\infty)\\), etc. - \\(t\\) in \\(x(t)\\) is an element of \\(\\langle a,b \\rangle\\), a subset of \\(\\mathbb{R}\\), and its output is a vector in \\(\\mathbb{R}^n\\) (or \\(\\mathbb{C}^n\\)) with \\(n\\) components.\nThis vector-function satisfies the system of \\(n\\) ordinary differential equations:\n\\[\nx'(t) = f(t, x(t)) \\iff\n\\begin{cases}\nx_1'(t) = f_1(t, x_1(t), x_2(t), \\dots, x_n(t)) \\\\\nx_2'(t) = f_2(t, x_1(t), x_2(t), \\dots, x_n(t)) \\\\\n\\vdots \\\\\nx_n'(t) = f_n(t, x_1(t), x_2(t), \\dots, x_n(t))\n\\end{cases} \\ \\ \\ \\ \\ \\ \\ (*)\n\\]\nThis defines another condition applied to \\(x\\): the derivative of \\(x\\) is a function \\(f\\) that maps the inputs \\(t\\) and \\(x(t)\\) to another vector:\n\\[\nf(t, x(t)) =\n\\begin{pmatrix}\nf_1(t, x_1(t), x_2(t), \\dots, x_n(t)) \\\\\nf_2(t, x_1(t), x_2(t), \\dots, x_n(t)) \\\\\n\\vdots \\\\\nf_n(t, x_1(t), x_2(t), \\dots, x_n(t))\n\\end{pmatrix} = x'(t)\n\\]\nNote here that \\(f(t, x(t)) = x'(t)\\) makes \\(x(t)\\) a differentiable function. Furthermore, the condition that this differential function must be an Ordinary Differential Equation is placed on \\(f(t, x(t)) = x'(t)\\).\nFinally, \\(f \\in C(G; \\mathbb{R}^n)\\) states that the function \\(f\\) is continuous and nice."
+  },
+  {
+    "objectID": "MA3/1_1CauchyProblem.html#definition-of-a-solution",
+    "href": "MA3/1_1CauchyProblem.html#definition-of-a-solution",
+    "title": "1.1 Cauchy Problem for 1st Order Differential Equations",
+    "section": "2. Definition of a solution",
+    "text": "2. Definition of a solution\n\\(D\\tiny{EFINITION}\\). We say that \\(x:\\langle a,b \\rangle \\rightarrow \\mathbb{R}^n\\) is a solution to the system if (\\(*\\)) iff\n\n\\(x \\in C^1(\\langle a,b \\rangle;\\mathbb{R}^n\\)\n\\((t,x(t)) \\in G, \\ \\ \\ \\forall t \\in \\langle a,b \\rangle\\)\n\\(x'(t) = f(t,x(t)), \\ \\ \\ \\forall t \\in \\langle a,b \\rangle\\)\n\n\n\nWhat does this mean?\n\nThis point simply states that a differentiable vector-function \\(x\\) is a solution to the system of \\(n\\) ordinary differential equations (\\(*\\)) if and only if:\n\n\\(x\\), with \\(n\\) components, is continuously differentiable across the interval \\(\\langle a, b \\rangle\\).\nFor all \\(t\\) that is an element in the interval \\(\\langle a, b \\rangle\\), \\(t\\) and \\(x(t)\\) are an element of \\(G\\).\n\nRemember: \\(G\\) is an open set in \\(\\mathbb{R} \\times \\mathbb{R}^n\\) (or in \\(\\mathbb{R} \\times \\mathbb{C}^n\\)).\n\nFor all \\(t\\) that is an element in the interval \\(\\langle a, b \\rangle\\), the derivative of \\(x(t)\\), \\(x'(t)\\), is equal to the function \\(f(t, x(t))\\).\nThis condition seems trivial since \\(f(t, x(t))\\) is defined by \\(f(t, x(t)) = x'(t)\\). However, it also places the restriction on \\(x(t)\\) that it must be a function."
+  },
+  {
+    "objectID": "MA3/1_1CauchyProblem.html#cauchy-problem",
+    "href": "MA3/1_1CauchyProblem.html#cauchy-problem",
+    "title": "1.1 Cauchy Problem for 1st Order Differential Equations",
+    "section": "3. Cauchy Problem",
+    "text": "3. Cauchy Problem"
+  }
+]
