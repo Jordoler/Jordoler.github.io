@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "Jordan Grey",
     "section": "",
-    "text": "Hi, I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey\n\nFeel free to explore my Resume or check out my latest Posts."
+    "text": "Hi, I’m a Physics student with Uni Leipzig, and IT Networking specialist.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey"
   },
   {
     "objectID": "about.html#about-me",
     "href": "about.html#about-me",
     "title": "Jordan Grey",
     "section": "",
-    "text": "Hi, I’m a Physics student with Uni Leipzig, and IT Networking specialist. I love complex problems and sharing knowledge through my blog.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey\n\nFeel free to explore my Resume or check out my latest Posts."
+    "text": "Hi, I’m a Physics student with Uni Leipzig, and IT Networking specialist.\n\n📍 Location: Leipzig, Germany\n📧 Email: Jordan\n🌐 GitHub: github.com/Jordoler\n🔗 LinkedIn: linkedin.com/in/jordangrey"
   },
   {
     "objectID": "about.html#resume",
@@ -81,7 +81,7 @@
     "href": "MA3/1_1CauchyProblem.html#reduction-of-the-cauchy-problem-to-the-integral-equation",
     "title": "1.1 Cauchy Problem for 1st Order Differential Equations",
     "section": "4. Reduction of the Cauchy problem to the integral equation",
-    "text": "4. Reduction of the Cauchy problem to the integral equation\n\\(T\\tiny{HEOREM}\\) Assume \\(x_0 \\in \\mathbb{R}^n\\) and \\(t_0 \\in \\langle a,b \\rangle\\) satisfy \\((t_0,x_0) \\in G\\). A function \\(x : \\langle a,b \\rangle \\rightarrow \\mathbb{R}^n\\) is a solution to the Cauchy problem (\\(**\\)) if and only if 1) \\(x \\in C(\\langle a,b \\rangle;\\mathbb{R}^n)\\) 2) \\((t,x(t)) \\in G, \\ \\ \\ \\forall t \\in \\langle a,b \\rangle\\) 3) The function \\(x(t)\\) satisfies the integral equation \\[x(t) = x_0 + \\int_{t_0}^tf(\\tau,x(\\tau)) \\ d\\tau , \\ \\ \\ \\forall t \\in \\langle a,b \\rangle\\]\n\n\nWhat does this mean?\n\nPoints 1 and 2 have been covered before, a quick recap is: \\(x\\) is continuous along the arbitary interval \\(\\langle a,b \\rangle\\) such that it is in \\(\\mathbb{R}^n\\). and the “point”\\((t,x(t))\\) is a subset of \\(G\\), Remark 1, for \\(t\\) along the arbitary interval \\(\\langle a,b \\rangle\\).\nThe third point applies the condition on \\(x(t)\\) such it is equal to the integral of \\(f(t,x(t))\\), Equation 2, from \\(t_0\\) to \\(t\\), and has been parametrized by \\(\\tau\\) where \\(t\\) is in the arbitary interval \\(\\langle a,b \\rangle\\)."
+    "text": "4. Reduction of the Cauchy problem to the integral equation\n\\(T\\tiny{HEOREM}\\) Assume \\(x_0 \\in \\mathbb{R}^n\\) and \\(t_0 \\in \\langle a,b \\rangle\\) satisfy \\((t_0,x_0) \\in G\\). A function \\(x : \\langle a,b \\rangle \\rightarrow \\mathbb{R}^n\\) is a solution to the Cauchy problem (\\(**\\)) if and only if 1. \\(x \\in C(\\langle a,b \\rangle;\\mathbb{R}^n)\\) 2. \\((t,x(t)) \\in G, \\ \\ \\ \\forall t \\in \\langle a,b \\rangle\\) 3. The function \\(x(t)\\) satisfies the integral equation \\[x(t) = x_0 + \\int_{t_0}^tf(\\tau,x(\\tau)) \\ d\\tau , \\ \\ \\ \\forall t \\in \\langle a,b \\rangle\\]\n\n\nWhat does this mean?\n\nPoints 1 and 2 have been covered before, a quick recap is: \\(x\\) is continuous along the arbitary interval \\(\\langle a,b \\rangle\\) such that it is in \\(\\mathbb{R}^n\\). and the “point”\\((t,x(t))\\) is a subset of \\(G\\), Remark 1, for \\(t\\) along the arbitary interval \\(\\langle a,b \\rangle\\).\nThe third point applies the condition on \\(x(t)\\) such it is equal to the integral of \\(f(t,x(t))\\), Equation 2, from \\(t_0\\) to \\(t\\), and has been parametrized by \\(\\tau\\) where \\(t\\) is in the arbitary interval \\(\\langle a,b \\rangle\\)."
   },
   {
     "objectID": "MA3/1_1CauchyProblem.html#peanos-interval",
