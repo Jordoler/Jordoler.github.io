@@ -88,7 +88,7 @@
     "href": "MA3/1_1CauchyProblem.html#peanos-interval",
     "title": "1.1 Cauchy Problem for 1st Order Differential Equations",
     "section": "5. Peano’s interval",
-    "text": "5. Peano’s interval\nAssume \\((t_0,x_0) \\in G\\) and \\(r &gt;0\\) and \\(R&gt;0\\) satisfy: \\[\n\\bar{P}_{r,R}(t_0,x_0) := [t_0 - r,t_0+r] \\times \\bar{B}_R(x_0) \\subset G\n\\] As \\(\\bar{P}_{r,R}(t_0,x_0)\\) is compact and \\(f \\in C(\\bar{P}_{r,R}(t_0,x_0))\\) we can define \\[\nM:=\\sup\\limits_{(t,x)\\in \\bar{P}_{r,R}(t_0,x_0)} |f(t,x)|.\n\\] Introduce a positive number \\[\nh := \\min \\left\\{ {r,\\frac{R}{M}}\\right\\}\n\\]\nThen the interval \\([t_0-h,t_0+h]\\) is called the Peano Interval for \\(f\\) and \\(\\bar{P}_{r,R}(t_0,x_0)\\).\n\\(T\\tiny{HEOREM}.\\) If \\(x(t)\\) is a solution to the Cauchy problem (\\(**\\)) and \\([t_0 - h,t_0+h]\\) we have \\(x(t) \\in B_R(x_0)\\).\n\n\nWhat does this mean?\n\nTo Be Written…"
+    "text": "5. Peano’s interval\nAssume \\((t_0,x_0) \\in G\\) and \\(r &gt;0\\) and \\(R&gt;0\\) satisfy: \\[\n\\bar{P}_{r,R}(t_0,x_0) := [t_0 - r,t_0+r] \\times \\bar{B}_R(x_0) \\subset G\n\\] As \\(\\bar{P}_{r,R}(t_0,x_0)\\) is compact and \\(f \\in C(\\bar{P}_{r,R}(t_0,x_0))\\) we can define \\[\nM:=\\sup\\limits_{(t,x)\\in \\bar{P}_{r,R}(t_0,x_0)} |f(t,x)|.\n\\] Introduce a positive number \\[\nh := \\min \\left\\{ {r,\\frac{R}{M}}\\right\\}\n\\]\nThen the interval \\([t_0-h,t_0+h]\\) is called the Peano Interval for \\(f\\) and \\(\\bar{P}_{r,R}(t_0,x_0)\\).\n\\(T\\tiny{HEOREM}.\\) If \\(x(t)\\) is a solution to the Cauchy problem, Equation 3, and \\([t_0 - h,t_0+h]\\) we have \\(x(t) \\in B_R(x_0)\\).\n\n\nWhat does this mean?\n\nTo Be Written…"
   },
   {
     "objectID": "MA3/1_1CauchyProblem.html#euler-method",
