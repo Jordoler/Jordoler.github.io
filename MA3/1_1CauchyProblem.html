@@ -200,7 +200,7 @@ window.Quarto = {
 </ol>
 <p>An example of this would be <span class="math inline">\((t, x)\)</span>, where <span class="math inline">\(t\)</span> is from <span class="math inline">\(\mathbb{R}\)</span> and <span class="math inline">\(x\)</span> is from <span class="math inline">\(\mathbb{R}^n\)</span> (or <span class="math inline">\(\mathbb{C}^n\)</span>).</p>
 <p>As <span class="math inline">\(G\)</span> is an <strong>open set</strong> of <span class="math inline">\(\mathbb{R} \times \mathbb{R}^n\)</span> (or in <span class="math inline">\(\mathbb{R} \times \mathbb{C}^n\)</span>), it contains points in this space but not necessarily the points along the “boundary” of the space.</p>
-<p>The vector field <span class="math inline">\(f\)</span> by definition is: <em>a <strong>vector field</strong> is an assignment of a vector to each point in a space.</em> Thus, <span class="math inline">\(f: G \rightarrow \mathbb{R}^n\)</span> (or <span class="math inline">\(\mathbb{C}^n\)</span>) says that <span class="math inline">\(f\)</span> assigns a vector in <span class="math inline">\(\mathbb{R}^n\)</span> (or <span class="math inline">\(\mathbb{C}^n\)</span>) to every point in <span class="math inline">\(G\)</span>.</p>
+<p>The vector field by definition: <em>a <strong>vector field</strong> is an assignment of a vector to each point in a space.</em> Thus, <span class="math inline">\(f: G \rightarrow \mathbb{R}^n\)</span> (or <span class="math inline">\(\mathbb{C}^n\)</span>) says that <span class="math inline">\(f\)</span> assigns a vector in <span class="math inline">\(\mathbb{R}^n\)</span> (or <span class="math inline">\(\mathbb{C}^n\)</span>) to every point in <span class="math inline">\(G\)</span>.</p>
 <p>If we think of this logical statement in relation to Newton’s equations of motion:</p>
 <p><span class="math display">\[
 f(t, \vec{r}) = \vec{r} = \frac{d\vec{r}}{dt}t - \frac{1}{2} \frac{d^2\vec{r}}{dt^2}t^2
@@ -249,9 +249,9 @@ Finally, <span class="math inline">\(f \in C(G; \mathbb{R}^n)\)</span> states th
 </section>
 <section id="definition-of-a-solution" class="level2">
 <h2 class="anchored" data-anchor-id="definition-of-a-solution">2. Definition of a solution</h2>
-<p><span class="math inline">\(D\tiny{EFINITION}\)</span>. We say that <span class="math inline">\(x:\langle a,b \rangle \rightarrow \mathbb{R}^n\)</span> is a solution to the system if (<span class="math inline">\(*\)</span>) iff</p>
+<p><span class="math inline">\(D\tiny{EFINITION}\)</span>. We say that <span class="math inline">\(x:\langle a,b \rangle \rightarrow \mathbb{R}^n\)</span> is a solution to the system <a href="#eq-xPrimeDefine" class="quarto-xref">Equation&nbsp;2</a> iff</p>
 <ol type="1">
-<li><p><span class="math inline">\(x \in C^**1(\langle a,b \rangle;\mathbb{R}^n)\)</span></p></li>
+<li><p><span class="math inline">\(x \in C^1(\langle a,b \rangle;\mathbb{R}^n)\)</span></p></li>
 <li><p><span class="math inline">\((t,x(t)) \in G, \ \ \ \forall t \in \langle a,b \rangle\)</span></p></li>
 <li><p><span class="math inline">\(x'(t) = f(t,x(t)), \ \&nbsp;\ \forall t \in \langle a,b \rangle\)</span></p></li>
 </ol>
@@ -259,7 +259,7 @@ Finally, <span class="math inline">\(f \in C(G; \mathbb{R}^n)\)</span> states th
 <summary>
 <em>What does this mean?</em>
 </summary>
-<p>This point simply states that a differentiable vector-function <span class="math inline">\(x\)</span> is a solution to the system of <span class="math inline">\(n\)</span> ordinary differential equation,<a href="#eq-xPrimeDefine" class="quarto-xref">Equation&nbsp;2</a>, if and only if:</p>
+<p>This point simply states that a differentiable vector-function <span class="math inline">\(x\)</span> is a solution to the system of <span class="math inline">\(n\)</span> ordinary differential equation, <a href="#eq-xPrimeDefine" class="quarto-xref">Equation&nbsp;2</a>, if and only if:</p>
 <ol type="1">
 <li><p><span class="math inline">\(x\)</span>, with <span class="math inline">\(n\)</span> components, is continuously differentiable across the interval <span class="math inline">\(\langle a, b \rangle\)</span>.</p></li>
 <li><p>For all <span class="math inline">\(t\)</span> that is an element in the interval <span class="math inline">\(\langle a, b \rangle\)</span>, <span class="math inline">\(t\)</span> and <span class="math inline">\(x(t)\)</span> are an element of <span class="math inline">\(G\)</span>.</p>
@@ -325,9 +325,11 @@ To Be Written…
 <section id="euler-method" class="level2">
 <h2 class="anchored" data-anchor-id="euler-method">6. Euler method</h2>
 <p>Assume <span class="math inline">\(P_{r,R}(t_0,x_0) \subset G\)</span> and let <span class="math inline">\([t_0-h, t_0+h]\)</span> be the Peano interval for <span class="math inline">\(f\)</span> and <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span>. For any <span class="math inline">\(m \in \mathbb{N}\)</span> we split the interval <span class="math inline">\([t_0,h]\)</span> into <span class="math inline">\(m\)</span> parts by points <span class="math display">\[
-t_0 &lt; t_1 &lt; t_2 &lt; \ ... \ &lt; t_m = t_0 + h, \ \ \ \&nbsp;\ t_k=t_0+\frac{k}{m}h, \ \ \ \ k=0,1,...,m
-\]</span> then we define points <span class="math inline">\({x_k}_{k=1}^{m} \subset \mathbb{R}^n\)</span> recursively as solutions of the following equation: <span class="math display">\[
-\frac{x_k - x_{k-1}}{t_k - t_{k-1}} = f(t_{k-1},x_{}k-1), \ \ \&nbsp;\ k01,2,...,m, \ \ \ \ t_k - t_{k-1}=\frac{h}{m}.
+t_0 &lt; t_1 &lt; t_2 &lt; \ ... \ &lt; t_m = t_0 + h, \ \ \ \&nbsp;\ t_k=t_0+\frac{k}{m}h, \ \  k = 0,1,...,m
+\]</span></p>
+<p>then we define points <span class="math inline">\({\{x_k\} }_{k=1}^{m} \subset \mathbb{R}^n\)</span> recursively as solutions of the following equation:</p>
+<p><span class="math display">\[
+\frac{x_k - x_{k-1}}{t_k - t_{k-1}} = f(t_{k-1},x_{}k-1), \ \ \&nbsp;\ k=1,2,...,m, \ \ \ \ t_k - t_{k-1}=\frac{h}{m}.
 \]</span> In other words, we define points, <span class="math inline">\(x_1,x_2,...,x_m\)</span> in the following recursive way: <span class="math display">\[
 x_1 = x_0 + f(t_0,x_0)\frac{h}{m}, \ \&nbsp;\ x_2 = x_1 + f(t_1,x_1)\frac{h}{m}, \ \ \ ... \ \ \ x_m = x_{m-1} + f(t_{m-1},x_{m})\frac{h}{m}.
 \]</span> Then for any <span class="math inline">\(t \in [t_0,h]\)</span> we define the <em>forward Euler approximations</em> <span class="math inline">\(\varphi_m(t)\)</span> for the Cauchy problem (<span class="math inline">\(**\)</span>) as a piece-wise linear continuous function: <span class="math display">\[
