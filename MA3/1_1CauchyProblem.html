@@ -332,7 +332,7 @@ t_0 &lt; t_1 &lt; t_2 &lt; \ ... \ &lt; t_m = t_0 + h, \ \ \ \&nbsp;\ t_k=t_0+\f
 \frac{x_k - x_{k-1}}{t_k - t_{k-1}} = f(t_{k-1},x_{}k-1), \ \ \&nbsp;\ k=1,2,...,m, \ \ \ \ t_k - t_{k-1}=\frac{h}{m}.
 \]</span> In other words, we define points, <span class="math inline">\(x_1,x_2,...,x_m\)</span> in the following recursive way: <span class="math display">\[
 x_1 = x_0 + f(t_0,x_0)\frac{h}{m}, \ \&nbsp;\ x_2 = x_1 + f(t_1,x_1)\frac{h}{m}, \ \ \ ... \ \ \ x_m = x_{m-1} + f(t_{m-1},x_{m})\frac{h}{m}.
-\]</span> Then for any <span class="math inline">\(t \in [t_0,h]\)</span> we define the <em>forward Euler approximations</em> <span class="math inline">\(\varphi_m(t)\)</span> for the Cauchy problem (<span class="math inline">\(**\)</span>) as a piece-wise linear continuous function: <span class="math display">\[
+\]</span> Then for any <span class="math inline">\(t \in [t_0,h]\)</span> we define the <em>forward Euler approximations</em> <span class="math inline">\(\varphi_m(t)\)</span> for the Cauchy problem, <a href="#eq-starStar" class="quarto-xref">Equation&nbsp;3</a>, as a piece-wise linear continuous function: <span class="math display">\[
 \varphi_m(t) := x_{k-1} + \frac{x_k - x_{k-1}}{t_k - t_{k-1}}(t-t_{k-1}),
 \&nbsp;\ \ \ \forall t \in [t_{k-1},t_k], \&nbsp;\&nbsp;\&nbsp;\ k=1,2,...,m
 \]</span> similar we can define the <em>backward Euler approximations</em> <span class="math inline">\(\varphi_m(t)\)</span> on the interval <span class="math inline">\([t_0 - h, t_0]\)</span>.</p>
