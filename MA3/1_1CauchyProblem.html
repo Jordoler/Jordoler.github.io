@@ -152,6 +152,10 @@ window.Quarto = {
   <li><a href="#systems-of-first-order-odes" id="toc-systems-of-first-order-odes" class="nav-link active" data-scroll-target="#systems-of-first-order-odes">1. Systems of first order ODEs</a></li>
   <li><a href="#definition-of-a-solution" id="toc-definition-of-a-solution" class="nav-link" data-scroll-target="#definition-of-a-solution">2. Definition of a solution</a></li>
   <li><a href="#cauchy-problem" id="toc-cauchy-problem" class="nav-link" data-scroll-target="#cauchy-problem">3. Cauchy Problem</a></li>
+  <li><a href="#reduction-of-the-cauchy-problem-to-the-integral-equation" id="toc-reduction-of-the-cauchy-problem-to-the-integral-equation" class="nav-link" data-scroll-target="#reduction-of-the-cauchy-problem-to-the-integral-equation">4. Reduction of the Cauchy problem to the integral equation</a></li>
+  <li><a href="#peanos-interval" id="toc-peanos-interval" class="nav-link" data-scroll-target="#peanos-interval">5. Peano’s interval</a></li>
+  <li><a href="#euler-method" id="toc-euler-method" class="nav-link" data-scroll-target="#euler-method">6. Euler method</a></li>
+  <li><a href="#compactness-of-euler-approximations" id="toc-compactness-of-euler-approximations" class="nav-link" data-scroll-target="#compactness-of-euler-approximations">7. Compactness of Euler approximations</a></li>
   </ul>
 </nav>
     </div>
@@ -185,7 +189,11 @@ window.Quarto = {
 <summary>
 <em>What does this mean?</em>
 </summary>
-<p>To break it down, <span class="math inline">\(G\)</span> being an open set in <span class="math inline">\(\mathbb{R} \times \mathbb{R}^n\)</span> (or in <span class="math inline">\(\mathbb{R} \times \mathbb{C}^n\)</span>) means that there is a space, <span class="math inline">\(\mathbb{R} \times \mathbb{R}^n\)</span> (or in <span class="math inline">\(\mathbb{R} \times \mathbb{C}^n\)</span>), that has two components:</p>
+<div id="rem-Gexplained" class="proof remark">
+<p><span class="proof-title"><em>Remark 1</em>. </span></p>
+<p>
+</p>
+<p><span class="math inline">\(G\)</span> being an open set in <span class="math inline">\(\mathbb{R} \times \mathbb{R}^n\)</span> (or in <span class="math inline">\(\mathbb{R} \times \mathbb{C}^n\)</span>) means that there is a space, <span class="math inline">\(\mathbb{R} \times \mathbb{R}^n\)</span> (or in <span class="math inline">\(\mathbb{R} \times \mathbb{C}^n\)</span>), that has two components:</p>
 <ol type="1">
 <li><p><strong><span class="math inline">\(\mathbb{R}\)</span></strong>: A real-valued number that comes from the first <span class="math inline">\(\mathbb{R}\)</span> in <span class="math inline">\(\mathbb{R} \times \mathbb{R}^n\)</span> (or in <span class="math inline">\(\mathbb{R} \times \mathbb{C}^n\)</span>). This is a <strong>1-Dimensional</strong> quantity. For example, consider it as the time <span class="math inline">\(t\)</span> dimension.</p></li>
 <li><p><strong><span class="math inline">\(\mathbb{R}^n\)</span> or <span class="math inline">\(\mathbb{C}^n\)</span></strong>: A real-valued or complex-valued <strong>N-Dimensional</strong> vector quantity. For example, a position vector <span class="math inline">\(x\)</span>.</p></li>
@@ -197,11 +205,18 @@ window.Quarto = {
 <p><span class="math display">\[
 f(t, \vec{r}) = \vec{r} = \frac{d\vec{r}}{dt}t - \frac{1}{2} \frac{d^2\vec{r}}{dt^2}t^2
 \]</span></p>
-We see that the function <span class="math inline">\(f\)</span> here assigns a vector, <em>position</em>, to each point <span class="math inline">\((t, \vec{r})\)</span> in <span class="math inline">\(G\)</span>.
+<p>We see that the function <span class="math inline">\(f\)</span> here assigns a vector, <em>position</em>, to each point <span class="math inline">\((t, \vec{r})\)</span> in <span class="math inline">\(G\)</span>.</p>
+</div>
 </details>
-<p>We are looking for a differentiable vector-function <span class="math display">\[x : \langle a,b \rangle \subset \mathbb{R} \rightarrow \mathbb{R}^n \text{ (or } \mathbb{C}^n ), \ \ \  x(t) =
-     \begin{pmatrix} x_1(t) \\ x_2(t) \\ \dots \\ x_n(t) \end{pmatrix} \; \]</span> which satisfies the system of <span class="math inline">\(n\)</span> ordinary differential equations: <span class="math display">\[x'(t) = f(t,x(t)) \iff \begin{cases} \begin{matrix} x_1'(t) = f_1(t,x_1(t),x_2(t), \dots , x_n(t)) \\ x_2'(t) = f_1(t,x_1(t),x_2(t), \dots , x_n(t)) \\ \dots \\ x_n'(t) = f_1(t,x_1(t),x_2(t), \dots , x_n(t)) \end{matrix} \end{cases} \ \ \ \ \ \ \ \ (*)\]</span></p>
-<p>In the sake of brevity we focus on the real case below. In our course we will always assume that <span class="math display">\[ f \in C(G;\mathbb{R}^n)\]</span></p>
+<p>We are looking for a differentiable vector-function <span id="eq-xDefine"><span class="math display">\[
+x : \langle a,b \rangle \subset \mathbb{R} \rightarrow \mathbb{R}^n \text{ (or } \mathbb{C}^n ), \ \ \  x(t) =
+     \begin{pmatrix} x_1(t) \\ x_2(t) \\ \dots \\ x_n(t) \end{pmatrix} \;
+\tag{1}\]</span></span> which satisfies the system of <span class="math inline">\(n\)</span> ordinary differential equations: <span id="eq-xPrimeDefine"><span class="math display">\[
+x'(t) = f(t,x(t)) \iff \begin{cases} \begin{matrix} x_1'(t) = f_1(t,x_1(t),x_2(t), \dots , x_n(t)) \\ x_2'(t) = f_1(t,x_1(t),x_2(t), \dots , x_n(t)) \\ \dots \\ x_n'(t) = f_1(t,x_1(t),x_2(t), \dots , x_n(t)) \end{matrix} \end{cases}
+\tag{2}\]</span></span></p>
+<p>In the sake of brevity we focus on the real case below. In our course we will always assume that <span class="math display">\[
+f \in C(G;\mathbb{R}^n)
+\]</span></p>
 <details>
 <summary>
 <em>What does this mean?</em>
@@ -216,7 +231,7 @@ x_1'(t) = f_1(t, x_1(t), x_2(t), \dots, x_n(t)) \\
 x_2'(t) = f_2(t, x_1(t), x_2(t), \dots, x_n(t)) \\
 \vdots \\
 x_n'(t) = f_n(t, x_1(t), x_2(t), \dots, x_n(t))
-\end{cases} \ \ \ \ \ \ \ (*)
+\end{cases} \ \ \ \ \ \ \ (2)
 \]</span></p>
 <p>This defines another condition applied to <span class="math inline">\(x\)</span>: the derivative of <span class="math inline">\(x\)</span> is a function <span class="math inline">\(f\)</span> that maps the inputs <span class="math inline">\(t\)</span> and <span class="math inline">\(x(t)\)</span> to another vector:</p>
 <p><span class="math display">\[
@@ -236,7 +251,7 @@ Finally, <span class="math inline">\(f \in C(G; \mathbb{R}^n)\)</span> states th
 <h2 class="anchored" data-anchor-id="definition-of-a-solution">2. Definition of a solution</h2>
 <p><span class="math inline">\(D\tiny{EFINITION}\)</span>. We say that <span class="math inline">\(x:\langle a,b \rangle \rightarrow \mathbb{R}^n\)</span> is a solution to the system if (<span class="math inline">\(*\)</span>) iff</p>
 <ol type="1">
-<li><p><span class="math inline">\(x \in C^1(\langle a,b \rangle;\mathbb{R}^n\)</span></p></li>
+<li><p><span class="math inline">\(x \in C^**1(\langle a,b \rangle;\mathbb{R}^n)\)</span></p></li>
 <li><p><span class="math inline">\((t,x(t)) \in G, \ \ \ \forall t \in \langle a,b \rangle\)</span></p></li>
 <li><p><span class="math inline">\(x'(t) = f(t,x(t)), \ \&nbsp;\ \forall t \in \langle a,b \rangle\)</span></p></li>
 </ol>
@@ -244,7 +259,7 @@ Finally, <span class="math inline">\(f \in C(G; \mathbb{R}^n)\)</span> states th
 <summary>
 <em>What does this mean?</em>
 </summary>
-<p>This point simply states that a differentiable vector-function <span class="math inline">\(x\)</span> is a solution to the system of <span class="math inline">\(n\)</span> ordinary differential equations (<span class="math inline">\(*\)</span>) if and only if:</p>
+<p>This point simply states that a differentiable vector-function <span class="math inline">\(x\)</span> is a solution to the system of <span class="math inline">\(n\)</span> ordinary differential equation,<a href="#eq-xPrimeDefine" class="quarto-xref">Equation&nbsp;2</a>, if and only if:</p>
 <ol type="1">
 <li><p><span class="math inline">\(x\)</span>, with <span class="math inline">\(n\)</span> components, is continuously differentiable across the interval <span class="math inline">\(\langle a, b \rangle\)</span>.</p></li>
 <li><p>For all <span class="math inline">\(t\)</span> that is an element in the interval <span class="math inline">\(\langle a, b \rangle\)</span>, <span class="math inline">\(t\)</span> and <span class="math inline">\(x(t)\)</span> are an element of <span class="math inline">\(G\)</span>.</p>
@@ -258,6 +273,84 @@ Finally, <span class="math inline">\(f \in C(G; \mathbb{R}^n)\)</span> states th
 </section>
 <section id="cauchy-problem" class="level2">
 <h2 class="anchored" data-anchor-id="cauchy-problem">3. Cauchy Problem</h2>
+<p>We will also consider the <em>Cauchy Problem</em> for the system (<span class="math inline">\(2\)</span>): for given <span class="math inline">\(x_0 \in \mathbb{R}^n\)</span> and <span class="math inline">\(t_0 \in \langle a,b \rangle\)</span> such that <span class="math inline">\((t_0,x_0) \in G\)</span> for a solution <span class="math inline">\(x \in C^1(\langle a,b \rangle;\mathbb{R}^n)\)</span> of the system, <a href="#eq-xPrimeDefine" class="quarto-xref">Equation&nbsp;2</a> , such that: <span id="eq-starStar"><span class="math display">\[
+\begin{cases} \begin{matrix} x'(t) = f(t,x(t)), \ \ \ \ t\in \langle a,b\rangle \\ x(t_0) = x_0 \end{matrix} \end{cases}
+\tag{3}\]</span></span></p>
+<details>
+<summary>
+<em>What does this mean?</em>
+</summary>
+<p>The most difficult part of this point is the term <em>Cauchy Problem</em> perhaps its easier to think of it as it’s other, more popular name <em>The Initial Value Problem</em>. where there is some initial value <span class="math inline">\(x(t_0) = x_0\)</span> with <span class="math inline">\(t_0\)</span> an element of an arbitrary interval <span class="math inline">\(\langle a,b \rangle\)</span> such that the <em>“point”</em> <span class="math inline">\((t_0,x_0)\)</span> is an element of <span class="math inline">\(G\)</span> <a href="#rem-Gexplained" class="quarto-xref">Remark&nbsp;1</a>.</p>
+<blockquote class="blockquote">
+<p>for a solution <span class="math inline">\(x \in C^1(\langle a,b \rangle;\mathbb{R}^n)\)</span> of the system (2)</p>
+</blockquote>
+for a solution <span class="math inline">\(x\)</span> which is a function that is continuously differentiable along the arbitary domain <span class="math inline">\(\langle a,b \rangle\)</span> such that it is in <span class="math inline">\(\mathbb{R}^n\)</span>. recall that <span class="math inline">\(x\)</span> here references the function, <a href="#eq-xDefine" class="quarto-xref">Equation&nbsp;1</a> , previously defined and . more conditions on <span class="math inline">\(x\)</span> are then applied <span class="math inline">\(x'(t) = f(t,x(t)), \ \ \ t\in \langle a,b \rangle\)</span> and <span class="math inline">\(x(t_0)=x_0\)</span>. if we compare these conditions with <a href="#eq-xPrimeDefine" class="quarto-xref">Equation&nbsp;2</a> we see that the solution the Cauchy Problem <em>Initial Value Problem</em> has the derivative <span class="math inline">\(x'(t)\)</span> that is equal to <a href="#eq-xPrimeDefine" class="quarto-xref">Equation&nbsp;2</a>.
+</details>
+</section>
+<section id="reduction-of-the-cauchy-problem-to-the-integral-equation" class="level2">
+<h2 class="anchored" data-anchor-id="reduction-of-the-cauchy-problem-to-the-integral-equation">4. Reduction of the Cauchy problem to the integral equation</h2>
+<p><span class="math inline">\(T\tiny{HEOREM}\)</span> Assume <span class="math inline">\(x_0 \in \mathbb{R}^n\)</span> and <span class="math inline">\(t_0 \in \langle a,b \rangle\)</span> satisfy <span class="math inline">\((t_0,x_0) \in G\)</span>. A function <span class="math inline">\(x : \langle a,b \rangle \rightarrow \mathbb{R}^n\)</span> is a solution to the Cauchy problem (<span class="math inline">\(**\)</span>) if and only if 1) <span class="math inline">\(x \in C(\langle a,b \rangle;\mathbb{R}^n)\)</span> 2) <span class="math inline">\((t,x(t)) \in G, \ \ \ \forall t \in \langle a,b \rangle\)</span> 3) The function <span class="math inline">\(x(t)\)</span> satisfies the integral equation <span class="math display">\[x(t) = x_0 + \int_{t_0}^tf(\tau,x(\tau)) \ d\tau , \ \&nbsp;\ \forall t \in \langle a,b \rangle\]</span></p>
+<details>
+<summary>
+<em>What does this mean?</em>
+</summary>
+<p>Points 1 and 2 have been covered before, a quick recap is: <span class="math inline">\(x\)</span> is continuous along the arbitary interval <span class="math inline">\(\langle a,b \rangle\)</span> such that it is in <span class="math inline">\(\mathbb{R}^n\)</span>. and the “point”<span class="math inline">\((t,x(t))\)</span> is a subset of <span class="math inline">\(G\)</span>, <a href="#rem-Gexplained" class="quarto-xref">Remark&nbsp;1</a>, for <span class="math inline">\(t\)</span> along the arbitary interval <span class="math inline">\(\langle a,b \rangle\)</span>.</p>
+The third point applies the condition on <span class="math inline">\(x(t)\)</span> such it is equal to the integral of <span class="math inline">\(f(t,x(t))\)</span>, <a href="#eq-xPrimeDefine" class="quarto-xref">Equation&nbsp;2</a>, from <span class="math inline">\(t_0\)</span> to <span class="math inline">\(t\)</span>, and has been parametrized by <span class="math inline">\(\tau\)</span> where <span class="math inline">\(t\)</span> is in the arbitary interval <span class="math inline">\(\langle a,b \rangle\)</span>.
+</details>
+</section>
+<section id="peanos-interval" class="level2">
+<h2 class="anchored" data-anchor-id="peanos-interval">5. Peano’s interval</h2>
+<p>Assume <span class="math inline">\((t_0,x_0) \in G\)</span> and <span class="math inline">\(r &gt;0\)</span> and <span class="math inline">\(R&gt;0\)</span> satisfy: <span class="math display">\[
+\bar{P}_{r,R}(t_0,x_0) := [t_0 - r,t_0+r] \times \bar{B}_R(x_0) \subset G
+\]</span> As <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span> is compact and <span class="math inline">\(f \in C(\bar{P}_{r,R}(t_0,x_0))\)</span> we can define <span class="math display">\[
+M:=\sup\limits_{(t,x)\in \bar{P}_{r,R}(t_0,x_0)} |f(t,x)|.
+\]</span> Introduce a positive number <span class="math display">\[
+h := \min \left\{ {r,\frac{R}{M}}\right\}
+\]</span></p>
+<p>Then the interval <span class="math inline">\([t_0-h,t_0+h]\)</span> is called the <strong>Peano Interval</strong> for <span class="math inline">\(f\)</span> and <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span>.</p>
+<p><span class="math inline">\(T\tiny{HEOREM}.\)</span> If <span class="math inline">\(x(t)\)</span> is a solution to the Cauchy problem (<span class="math inline">\(**\)</span>) and <span class="math inline">\([t_0 - h,t_0+h]\)</span> we have <span class="math inline">\(x(t) \in B_R(x_0)\)</span>.</p>
+<details>
+<summary>
+<em>What does this mean?</em>
+</summary>
+To Be Written…
+</details>
+</section>
+<section id="euler-method" class="level2">
+<h2 class="anchored" data-anchor-id="euler-method">6. Euler method</h2>
+<p>Assume <span class="math inline">\(P_{r,R}(t_0,x_0) \subset G\)</span> and let <span class="math inline">\([t_0-h, t_0+h]\)</span> be the Peano interval for <span class="math inline">\(f\)</span> and <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span>. For any <span class="math inline">\(m \in \mathbb{N}\)</span> we split the interval <span class="math inline">\([t_0,h]\)</span> into <span class="math inline">\(m\)</span> parts by points <span class="math display">\[
+t_0 &lt; t_1 &lt; t_2 &lt; \ ... \ &lt; t_m = t_0 + h, \ \ \ \&nbsp;\ t_k=t_0+\frac{k}{m}h, \ \ \ \ k=0,1,...,m
+\]</span> then we define points <span class="math inline">\({x_k}_{k=1}^{m} \subset \mathbb{R}^n\)</span> recursively as solutions of the following equation: <span class="math display">\[
+\frac{x_k - x_{k-1}}{t_k - t_{k-1}} = f(t_{k-1},x_{}k-1), \ \ \&nbsp;\ k01,2,...,m, \ \ \ \ t_k - t_{k-1}=\frac{h}{m}.
+\]</span> In other words, we define points, <span class="math inline">\(x_1,x_2,...,x_m\)</span> in the following recursive way: <span class="math display">\[
+x_1 = x_0 + f(t_0,x_0)\frac{h}{m}, \ \&nbsp;\ x_2 = x_1 + f(t_1,x_1)\frac{h}{m}, \ \ \ ... \ \ \ x_m = x_{m-1} + f(t_{m-1},x_{m})\frac{h}{m}.
+\]</span> Then for any <span class="math inline">\(t \in [t_0,h]\)</span> we define the <em>forward Euler approximations</em> <span class="math inline">\(\varphi_m(t)\)</span> for the Cauchy problem (<span class="math inline">\(**\)</span>) as a piece-wise linear continuous function: <span class="math display">\[
+\varphi_m(t) := x_{k-1} + \frac{x_k - x_{k-1}}{t_k - t_{k-1}}(t-t_{k-1}),
+\&nbsp;\ \ \ \forall t \in [t_{k-1},t_k], \&nbsp;\&nbsp;\&nbsp;\ k=1,2,...,m
+\]</span> similar we can define the <em>backward Euler approximations</em> <span class="math inline">\(\varphi_m(t)\)</span> on the interval <span class="math inline">\([t_0 - h, t_0]\)</span>.</p>
+<details>
+<summary>
+<em>What does this mean?</em>
+</summary>
+To Be Written…
+</details>
+</section>
+<section id="compactness-of-euler-approximations" class="level2">
+<h2 class="anchored" data-anchor-id="compactness-of-euler-approximations">7. Compactness of Euler approximations</h2>
+<p><span class="math inline">\(T\tiny{HEOREM}.\)</span> Assume <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0) \subset G\)</span> and let <span class="math inline">\([t_0-h,t_0+h]\)</span> be the Peano interval for <span class="math inline">\(f\)</span> and <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span>. Assume <span class="math inline">\(\varepsilon_m \rightarrow +0\)</span>.</p>
+<p>Then for any <span class="math inline">\(m \in \mathbb{N}\)</span> there exists <span class="math inline">\(N=N(m) \in \mathbb{N}\)</span> such that the EUler approximations <span class="math inline">\(\varphi_m \in C([t_0 - h,t_0+h];\mathbb{R}^n)\)</span> for the Cauchy problem, <a href="#eq-starStar" class="quarto-xref">Equation&nbsp;3</a>, (corresponding to the mesh of partition <span class="math inline">\(\frac{h}{}\)</span>) possess the following properties:</p>
+<ol type="1">
+<li><span class="math inline">\(\varphi_m(t) \in \bar{B}_R(x_0) , \ \ \ \ \forall t \subset [t_0 - h, t_0 + h]\)</span></li>
+<li><span class="math inline">\(|\varphi_m'(t) - f(t,\varphi_m(t))| \le \varepsilon_m , \ \ \ \ \forall t \in [t_0 - h, t_0 + h]\)</span></li>
+<li>functions <span class="math inline">\(\{ \varphi_m \}_{m=1}^{\infty}\)</span> are uniformly bounded on <span class="math inline">\([t_0 - h, t_0 + h]\)</span></li>
+<li>functions <span class="math inline">\(\{ \varphi_m \}_{m=1}^{\infty}\)</span> are uniformly equicontinuous on <span class="math inline">\([t_0 - h, t_0 + h]\)</span></li>
+</ol>
+<details>
+<summary>
+<em>What does this mean?</em>
+</summary>
+To Be Written…
+</details>
 
 
 </section>
@@ -497,7 +590,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/Jordoler\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
