@@ -151,7 +151,7 @@ window.Quarto = {
   <ul>
   <li><a href="#systems-of-first-order-odes" id="toc-systems-of-first-order-odes" class="nav-link active" data-scroll-target="#systems-of-first-order-odes">1. Systems of first order ODEs</a></li>
   <li><a href="#definition-of-a-solution" id="toc-definition-of-a-solution" class="nav-link" data-scroll-target="#definition-of-a-solution">2. Definition of a solution</a></li>
-  <li><a href="#cauchy-problem" id="toc-cauchy-problem" class="nav-link" data-scroll-target="#cauchy-problem">3. Cauchy Problem</a></li>
+  <li><a href="#sec-Cauchy_Problem" id="toc-sec-Cauchy_Problem" class="nav-link" data-scroll-target="#sec-Cauchy_Problem">3. Cauchy Problem</a></li>
   <li><a href="#reduction-of-the-cauchy-problem-to-the-integral-equation" id="toc-reduction-of-the-cauchy-problem-to-the-integral-equation" class="nav-link" data-scroll-target="#reduction-of-the-cauchy-problem-to-the-integral-equation">4. Reduction of the Cauchy problem to the integral equation</a></li>
   <li><a href="#peanos-interval" id="toc-peanos-interval" class="nav-link" data-scroll-target="#peanos-interval">5. Peano’s interval</a></li>
   <li><a href="#euler-method" id="toc-euler-method" class="nav-link" data-scroll-target="#euler-method">6. Euler method</a></li>
@@ -271,8 +271,8 @@ Finally, <span class="math inline">\(f \in C(G; \mathbb{R}^n)\)</span> states th
 </ol>
 </details>
 </section>
-<section id="cauchy-problem" class="level2">
-<h2 class="anchored" data-anchor-id="cauchy-problem">3. Cauchy Problem</h2>
+<section id="sec-Cauchy_Problem" class="level2">
+<h2 class="anchored" data-anchor-id="sec-Cauchy_Problem">3. Cauchy Problem</h2>
 <p>We will also consider the <em>Cauchy Problem</em> for the system (<span class="math inline">\(2\)</span>): for given <span class="math inline">\(x_0 \in \mathbb{R}^n\)</span> and <span class="math inline">\(t_0 \in \langle a,b \rangle\)</span> such that <span class="math inline">\((t_0,x_0) \in G\)</span> for a solution <span class="math inline">\(x \in C^1(\langle a,b \rangle;\mathbb{R}^n)\)</span> of the system, <a href="#eq-xPrimeDefine" class="quarto-xref">Equation&nbsp;2</a> , such that: <span id="eq-starStar"><span class="math display">\[
 \begin{cases} \begin{matrix} x'(t) = f(t,x(t)), \ \ \ \ t\in \langle a,b\rangle \\ x(t_0) = x_0 \end{matrix} \end{cases}
 \tag{3}\]</span></span></p>
@@ -306,20 +306,27 @@ The third point applies the condition on <span class="math inline">\(x(t)\)</spa
 </section>
 <section id="peanos-interval" class="level2">
 <h2 class="anchored" data-anchor-id="peanos-interval">5. Peano’s interval</h2>
-<p>Assume <span class="math inline">\((t_0,x_0) \in G\)</span> and <span class="math inline">\(r &gt;0\)</span> and <span class="math inline">\(R&gt;0\)</span> satisfy: <span class="math display">\[
+<p>Assume <span class="math inline">\((t_0,x_0) \in G\)</span> and <span class="math inline">\(r &gt;0\)</span> and <span class="math inline">\(R&gt;0\)</span> satisfy: <span id="eq-ProductSet"><span class="math display">\[
 \bar{P}_{r,R}(t_0,x_0) := [t_0 - r,t_0+r] \times \bar{B}_R(x_0) \subset G
-\]</span> As <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span> is compact and <span class="math inline">\(f \in C(\bar{P}_{r,R}(t_0,x_0))\)</span> we can define <span class="math display">\[
+\tag{4}\]</span></span></p>
+<p>As <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span> is compact and <span class="math inline">\(f \in C(\bar{P}_{r,R}(t_0,x_0))\)</span> we can define <span id="eq-MDefine"><span class="math display">\[
 M:=\sup\limits_{(t,x)\in \bar{P}_{r,R}(t_0,x_0)} |f(t,x)|.
-\]</span> Introduce a positive number <span class="math display">\[
+\tag{5}\]</span></span> Introduce a positive number <span id="eq-hDefine"><span class="math display">\[
 h := \min \left\{ {r,\frac{R}{M}}\right\}
-\]</span></p>
+\tag{6}\]</span></span></p>
 <p>Then the interval <span class="math inline">\([t_0-h,t_0+h]\)</span> is called the <strong>Peano Interval</strong> for <span class="math inline">\(f\)</span> and <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span>.</p>
 <p><span class="math inline">\(T\tiny{HEOREM}.\)</span> If <span class="math inline">\(x(t)\)</span> is a solution to the Cauchy problem, <a href="#eq-starStar" class="quarto-xref">Equation&nbsp;3</a>, and <span class="math inline">\([t_0 - h,t_0+h]\)</span> we have <span class="math inline">\(x(t) \in B_R(x_0)\)</span>.</p>
 <details>
 <summary>
 <em>What does this mean?</em>
 </summary>
-To Be Written…
+<p><a href="#eq-ProductSet" class="quarto-xref">Equation&nbsp;4</a>, defines a Product set <span class="math inline">\(\bar{P}\)</span>, that is in a closed interval <span class="math inline">\([t_0 - r,t_0+r]\)</span> of the space <span class="math inline">\(\mathbb{R}\)</span> in <span class="math inline">\(G \subset \mathbb{R} \times \mathbb{R}^n\)</span> <strong>and</strong> in the closed Ball <span class="math inline">\(\bar{B}_{R}(x_0)\)</span> of the space <span class="math inline">\(\mathbb{R}^n\)</span> in <span class="math inline">\(G\)</span>. For an initial point <span class="math inline">\((t_0,x_0)\)</span> that is an element of <span class="math inline">\(G\)</span>.</p>
+<p>the closed interval <span class="math inline">\([t_0 - r,t_0+r]\)</span> can be considered a time neighborhood around <span class="math inline">\((t_0,x_0)\)</span> and <span class="math inline">\(\bar{B}_{R}(x_0)\)</span> can be considered the spatial neighborhood around <span class="math inline">\((t_0,x_0)\)</span>.</p>
+<p><span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span> can then be read as the subset of <span class="math inline">\(G\)</span> in the closed region <span class="math inline">\((t_0 ± r,x_0 ± R)\)</span> keeping in mind that <span class="math inline">\(x_0\)</span> and <span class="math inline">\(R\)</span> are vectors of length <span class="math inline">\(n\)</span>. <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span> is compact as both spaces <span class="math inline">\([t_0 - r,t_0+r]\)</span> and <span class="math inline">\(\bar{B}_{R}(x_0)\)</span> are closed, and <span class="math inline">\(f \in C(\bar{P}_{r,R}(t_0,x_0))\)</span> as <span class="math inline">\(f\)</span> was defined as <span class="math inline">\(f \in C(G)\)</span> and since <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0) \subset G\)</span> it is clearly the case that <span class="math inline">\(f\)</span> is in <span class="math inline">\(C(\bar{P})\)</span>.</p>
+<p>The introduction of the <span class="math inline">\(M\)</span> being the supremum of <span class="math inline">\(|f(t,x)|\)</span> for <span class="math inline">\((t,x) \in \bar{P}_{r,R}(t_0,x_0)\)</span> is used to bound the rate of change of <span class="math inline">\(x(t)\)</span> in the latter theorem, just keep in mind that <span class="math inline">\(M\)</span> is the maximum value of <span class="math inline">\(f\)</span> in the local region, <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span> about <span class="math inline">\((t_0,x_0)\)</span>.</p>
+<p>Looking at the <span class="math inline">\(T\tiny{HEOREM}.\)</span> and the definition of <span class="math inline">\(h\)</span> together. <span class="math inline">\(h\)</span> defines a <strong><em>time step</em></strong> or a step in <span class="math inline">\(\mathbb{R}\)</span> of our <span class="math inline">\(G \subset \mathbb{R} \times \mathbb{R}^n\)</span>. That is used to define a time interval: <span class="math inline">\([t_0 - h, t_0 + h]\)</span> that <span class="math inline">\(T\tiny{HEOREM}\)</span> utilizes.</p>
+<p><span class="math inline">\(h\)</span> is defined as the <span class="math inline">\(\min \left\{ {r,\frac{R}{M}}\right\}\)</span> for a key reason: as <span class="math inline">\(f\)</span> is a function, <span class="math inline">\(f(t,x(t))\)</span> of <span class="math inline">\(t\)</span> and <span class="math inline">\(x(t)\)</span> which is again dependent on <span class="math inline">\(t\)</span> there exists the case that the arbitrary <span class="math inline">\(r&gt;0\)</span> can be inside the time neighborhood defined by <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span> <strong>but outside</strong> the space neighborhood. The introduction of <span class="math inline">\(h = \min \left\{ {r,\frac{R}{M}}\right\}\)</span> ensures that if <span class="math inline">\(r\)</span> is too big, <span class="math inline">\(\frac{R}{M}\)</span>, <em>(which is the spatial step over the maximum value of <span class="math inline">\(f\)</span> in <span class="math inline">\(\bar{P}\)</span> ),</em> is chosen which is guaranteed to be in the spatial step <span class="math inline">\(\bar{B}_{R}(x_0)\)</span> and the time step <span class="math inline">\([t_0 - r,t_0+r]\)</span> and thus in <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span>, This special interval has a name and that is… the <strong>Peano Interval</strong>!!.</p>
+<p>Finally <span class="math inline">\(T\tiny{HEOREM}\)</span> states that if <span class="math inline">\(x(t)\)</span> is a solution to the <a href="#sec-Cauchy_Problem">Cauchy Problem</a>, <em>(Initial Value Problem)</em> and is in the interval <span class="math inline">\([t_0 - h, t+h]\)</span>, <strong>Peano Interval</strong> then the solution is an element of the spatial ball around the initial value condition <span class="math inline">\(x_0\)</span>.</p>
 </details>
 </section>
 <section id="euler-method" class="level2">
@@ -346,7 +353,7 @@ To Be Written…
 <section id="compactness-of-euler-approximations" class="level2">
 <h2 class="anchored" data-anchor-id="compactness-of-euler-approximations">7. Compactness of Euler approximations</h2>
 <p><span class="math inline">\(T\tiny{HEOREM}.\)</span> Assume <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0) \subset G\)</span> and let <span class="math inline">\([t_0-h,t_0+h]\)</span> be the Peano interval for <span class="math inline">\(f\)</span> and <span class="math inline">\(\bar{P}_{r,R}(t_0,x_0)\)</span>. Assume <span class="math inline">\(\varepsilon_m \rightarrow +0\)</span>.</p>
-<p>Then for any <span class="math inline">\(m \in \mathbb{N}\)</span> there exists <span class="math inline">\(N=N(m) \in \mathbb{N}\)</span> such that the EUler approximations <span class="math inline">\(\varphi_m \in C([t_0 - h,t_0+h];\mathbb{R}^n)\)</span> for the Cauchy problem, <a href="#eq-starStar" class="quarto-xref">Equation&nbsp;3</a>, (corresponding to the mesh of partition <span class="math inline">\(\frac{h}{}\)</span>) possess the following properties:</p>
+<p>Then for any <span class="math inline">\(m \in \mathbb{N}\)</span> there exists <span class="math inline">\(N=N(m) \in \mathbb{N}\)</span> such that the EUler approximations <span class="math inline">\(\varphi_m \in C([t_0 - h,t_0+h];\mathbb{R}^n)\)</span> for the Cauchy problem, <a href="#eq-starStar" class="quarto-xref">Equation&nbsp;3</a>, (corresponding to the mesh of partition <span class="math inline">\(\frac{h}{N}\)</span>) possess the following properties:</p>
 <ol type="1">
 <li><span class="math inline">\(\varphi_m(t) \in \bar{B}_R(x_0) , \ \ \ \ \forall t \subset [t_0 - h, t_0 + h]\)</span></li>
 <li><span class="math inline">\(|\varphi_m'(t) - f(t,\varphi_m(t))| \le \varepsilon_m , \ \ \ \ \forall t \in [t_0 - h, t_0 + h]\)</span></li>
